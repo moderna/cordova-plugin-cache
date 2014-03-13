@@ -47,8 +47,9 @@ public class Cache extends CordovaPlugin
     @Override
     public boolean execute (String action, JSONArray args, CallbackContext callbackContext) throws JSONException
     {
-		try
+		/*try
 		{
+		*/
 			if( action.equals("clear") )
 			{
 				Log.v(LOG_TAG,"Cordova Android Cache.clear() called.");
@@ -61,7 +62,7 @@ public class Cache extends CordovaPlugin
 						try
 						{
 							// clear the cache
-							self.webView.clearCache();
+							self.webView.clearCache(true);
 							
 							// send success result to cordova
 							PluginResult result = new PluginResult(PluginResult.Status.OK);
@@ -76,13 +77,14 @@ public class Cache extends CordovaPlugin
 							// return error answer to cordova
 							PluginResult result = new PluginResult(PluginResult.Status.ERROR, msg);
 							result.setKeepCallback(false); 
-							callbackContext.sendPluginResult(result);
+							self.callbackContext.sendPluginResult(result);
 						}
 		            }
 		        });
 				return true;
 			}
 			return false;
+			/*
 		}
 		catch (JSONException e)
 		{
@@ -90,5 +92,6 @@ public class Cache extends CordovaPlugin
 			//callbackContext.error("Problem with JSON");
 			return false;
 		}
+		*/
     }
 }

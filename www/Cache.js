@@ -9,7 +9,7 @@ var Cache =
 {
     clear : function( success, error )
     {
-        exec(success, error, "Cache", "clear")
+        exec(success, error, "Cache", "clear", [])
     }
 }
 
