@@ -1,4 +1,4 @@
-Html 2 Pdf
+Cache
 =============
 
 This is a WebView cache plugin for Phonegap 3.3.0 / Cordova 3.3.1 supporting Android (>=2.3.3) and iOS(>=6.0).
