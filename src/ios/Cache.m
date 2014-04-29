@@ -38,16 +38,16 @@
 	[[NSURLCache sharedURLCache] removeAllCachedResponses];
 	
     // trigger success resonse
-	[self.success];
+	[self success];
 }
 
 - (void)success
 {
-    NSLog(@"%@",@"Cordova iOS wenview cachee cleared.");
+    NSLog(@"%@",@"Cordova iOS webview cache cleared.");
     
     // create acordova result
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
-                                                messageAsString:[resultMsg stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                                                messageAsString:@""];
     
     // send cordova result
     [self writeJavascript:[result toSuccessCallbackString:command.callbackId]];
