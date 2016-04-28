@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="at.modalog.cordova.plugin.cache"
-    version="1.0.0">
+    version="1.1.0">
 
     <name>Cache</name>
     <repo>https://github.com/moderna/cordova-plugin-cache.git</repo>
@@ -10,7 +10,7 @@
     <license>MIT</license>
     <author>Modern Alchemists OG</author>
     <description>
-      &lt;p&gt;This is a WebView cache plugin for Phonegap 3.3.0 / Cordova 3.3.1 supporting Android (>=2.3.3) and iOS(>=6.0). It allows to clear the cordova webview cache.&lt;/p&gt;
+      &lt;p&gt;This is a WebView cache plugin for Cordova 6.1.1+ supporting Android (>=4.1) and iOS(>=6.0). It allows to clear the cordova webview cache.&lt;/p&gt;
     </description>
 
     <js-module src="www/Cache.js" name="Cache">
