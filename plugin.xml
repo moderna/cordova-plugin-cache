@@ -13,12 +13,12 @@
       &lt;p&gt;This is a WebView cache plugin for Cordova 6.1.1+ supporting Android (>=4.1) and iOS(>=6.0). It allows to clear the cordova webview cache.&lt;/p&gt;
     </description>
 
-    <js-module src="www/Cache.js" name="Cache">
-        <clobbers target="cache" /><!-- will be available under window.cache -->
-    </js-module>
-
     <!-- android -->
     <platform name="android">
+        <js-module src="www/Cache.js" name="Cache">
+            <clobbers target="cache" /><!-- will be available under window.cache -->
+        </js-module>
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Cache" >
                 <param name="android-package" value="at.modalog.cordova.plugin.cache.Cache"/>
@@ -30,6 +30,10 @@
     
     <!-- ios -->
     <platform name="ios">
+        <js-module src="www/Cache.js" name="Cache">
+            <clobbers target="cache" /><!-- will be available under window.cache -->
+        </js-module>
+
         <config-file target="config.xml" parent="/*">
             <feature name="Cache">
                 <param name="ios-package" value="Cache" />
