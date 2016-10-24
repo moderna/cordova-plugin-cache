@@ -38,10 +38,9 @@
 
         // clear cache
         [[NSURLCache sharedURLCache] removeAllCachedResponses];
+        [self success];
 
     }];
-
-    [self success];
 }
 
 - (void)success
