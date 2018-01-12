@@ -1,5 +1,3 @@
-
-
 {
   "name": "cordova-plugin-cache",
   "description": "WebView cache plugin for Cordova that allows to clear the cordova webview cache.",
